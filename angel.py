@@ -6,7 +6,7 @@ import requests
 from bs4 import BeautifulSoup
 from flask import Flask, request
 
-TOKEN = '6700432608:AAGLewsKHozPU8WoAIzvdEtYLGUhqZAZw'  # replace your bot token
+TOKEN = '7706520148:AAHaXSUpxE4mvyBizJJMBIe8bcJf6MSV0MM'  # replace your bot token
 
 bot = telebot.TeleBot(TOKEN)
 
@@ -29,13 +29,13 @@ def random_answer(message):
     )
     
     keyboard = types.InlineKeyboardMarkup().add(
-        types.InlineKeyboardButton('🔗 GitHub 🔗', url='https://github.com/SudoR2spr'),
-        types.InlineKeyboardButton(text="⚡ Powered By", url='https://t.me/Opleech_WD')
+        types.InlineKeyboardButton('🔗 GitHub 🔗', url='https://t.me/RahatVx'),
+        types.InlineKeyboardButton(text="⚡ Powered By", url='https://t.me/RM_Movie_Flix')
     )
     
     bot.send_photo(
         chat_id=message.chat.id,
-        photo='https://graph.org/file/4e8a1172e8ba4b7a0bdfa.jpg',
+        photo='https://envs.sh/kX6.jpg',
         caption=text_message,
         parse_mode='Markdown',
         reply_markup=keyboard
@@ -53,7 +53,7 @@ def start(message):
 
     bot.send_photo(
         chat_id=message.chat.id,
-        photo='https://graph.org/file/4e8a1172e8ba4b7a0bdfa.jpg',
+        photo='https://envs.sh/kX6.jpg',
         caption=combined_caption,
         parse_mode='Markdown',
         reply_markup=keyboard
